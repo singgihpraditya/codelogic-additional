@@ -1,7 +1,7 @@
 package id.co.ogya.rest.simple.service;
 
 import id.co.ogya.lib.CommonUtils;
-import id.co.ogya.rest.simple.config.Purchase;
+import id.co.ogya.rest.simple.entity.Purchase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
