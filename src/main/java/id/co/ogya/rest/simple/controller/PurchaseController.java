@@ -16,6 +16,6 @@ public class PurchaseController {
 	@RequestMapping(value = "/purchase/{customer-id}", method = RequestMethod.GET)
 	public ResponseEntity inquiry(@PathVariable("customer-id") String customerId){
 		String hashCode = Utils.getHashCodeNumber() + "-INQUIRY-PURCASE-";
-		return purchaseService.list(hashCode, customerId);
+		return purchaseService.inquiry(hashCode, customerId);
 	}
 }

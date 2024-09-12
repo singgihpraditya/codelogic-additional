@@ -5,6 +5,7 @@ import lombok.Data;
 
 @Data
 public class PurchaseOutputSchema extends BaseOutputSchema {
+	private String refNo;
 	private String productId;
 	private String productName;
 	private Integer quantity;
