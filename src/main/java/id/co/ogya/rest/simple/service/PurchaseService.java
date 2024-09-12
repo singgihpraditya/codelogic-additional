@@ -1,5 +1,6 @@
 package id.co.ogya.rest.simple.service;
 
+import id.co.ogya.lib.CommonUtils;
 import id.co.ogya.rest.simple.config.Purchase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -20,7 +21,7 @@ public class PurchaseService {
 	@Autowired
 	private PurchaseRepository purchaseRepository;
 	
-	public ResponseEntity list(String hashCode, String customerId) {
+	public ResponseEntity inquiry(String hashCode, String customerId) {
 		PurchaseOutputSchema outputSchema = new PurchaseOutputSchema();
 		log.debug(hashCode + "Get data");
 		Purchase purchase = purchaseRepository.findByCustomerId(customerId);
@@ -28,6 +29,7 @@ public class PurchaseService {
 			return responseUtils.generateFailedResult(outputSchema, new Exception("No Data Found"), HttpStatus.NOT_FOUND.value());
 		}
 
+		outputSchema.setRefNo(new CommonUtils().getShortGeneratedId());
 		outputSchema.setProductId(purchase.getProductId());
 		outputSchema.setPrice(purchase.getPrice());
 		outputSchema.setQuantity(purchase.getQuantity());
