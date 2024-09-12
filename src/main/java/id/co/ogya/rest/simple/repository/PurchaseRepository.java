@@ -1,6 +1,6 @@
 package id.co.ogya.rest.simple.repository;
 
-import id.co.ogya.rest.simple.config.Purchase;
+import id.co.ogya.rest.simple.entity.Purchase;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.jdbc.core.JdbcTemplate;

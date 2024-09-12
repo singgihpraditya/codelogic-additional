@@ -1,4 +1,4 @@
-package id.co.ogya.rest.simple.config;
+package id.co.ogya.rest.simple.entity;
 
 import lombok.Data;
 

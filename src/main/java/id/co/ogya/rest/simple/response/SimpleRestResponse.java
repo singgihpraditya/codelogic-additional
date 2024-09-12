@@ -1,7 +1,5 @@
-package id.co.ogya.rest.simple.response.feign;
+package id.co.ogya.rest.simple.response;
 
-import id.co.ogya.rest.simple.response.BaseOutputSchema;
-import id.co.ogya.rest.simple.response.BaseResponse;
 import lombok.Data;
 
 @Data

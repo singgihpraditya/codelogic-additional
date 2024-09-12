@@ -1,6 +1,6 @@
 package id.co.ogya.rest.simple.util;
 
-import id.co.ogya.rest.simple.response.feign.SimpleRestResponse;
+import id.co.ogya.rest.simple.response.SimpleRestResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
